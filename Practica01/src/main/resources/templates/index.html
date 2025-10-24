@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head('Inicio')"></head>
+<body th:replace="layout :: body(~{::content})">
+<div th:fragment="content" class="py-4">
+  <h2>Práctica 01</h2>
+  <p>Bienvenido. Ir al listado de árboles:</p>
+  <a class="btn btn-primary" th:href="@{/arboles}">Ver árboles</a>
+</div>
+</body>
+</html>
